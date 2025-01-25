@@ -1,0 +1,26 @@
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{
+    "username": "touhid",
+    "password": "qwerty"
+}
+
+###
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{
+    "username": "touhid",
+    "password": "qwerty",
+    "email": "touhid@gmail.com"
+}
+
+###
+
+GET http://127.0.0.1:8000/test_token
+Content-Type: application/json
+Authorization: Token b256562197e69dcc7e7a592bdf740de3a8f8b476
+
+{}
